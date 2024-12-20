@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapview"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MapsActivity">
+
+    <!-- Back button and title -->
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal"
+        android:paddingTop="50dp">
+
+        <ImageView
+            android:id="@+id/backimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textColor="@color/egBlack"
+            android:text="ตำแหน่งปัจจุบัน"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_bar"
+        android:layout_margin="20dp"
+        map:iconifiedByDefault="false"
+        map:queryHint="ค้นหาสถานที่..."
+        android:elevation="2dp"
+        android:layout_below="@id/toplayout"
+        android:background="@drawable/diseatbg"/>
+
+    <!-- Map view -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/toplayout"
+        tools:context=".MapsActivity" />
+
+    <!-- Delivery date information -->
+    <LinearLayout
+        android:id="@+id/Lndetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/map"
+        android:layout_centerHorizontal="true"
+        android:background="@color/green_kemt"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/cvdetail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            android:orientation="vertical"
+            android:backgroundTint="@color/green_kemt"
+            android:padding="20dp" >
+
+            <TextView
+                android:id="@+id/deliveryDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="แผนที่แสดงตำแหน่งโรงพยาบาล"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/packageDetailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ที่อยู่ใกล้คุณภายในรัศมี 20 กิโลเมตร"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnMapme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/green_oion"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/baseline_fmd_good_24"
+                map:tint="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="กลับตำแหน่งเดิม"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Lndetail"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:layout_marginTop="5dp">
+
+        <!-- Tracking number -->
+        <TextView
+            android:id="@+id/help2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="หากมีปัญหาเพิ่มเติมสามารถแจ้งเข้ามาได้ทันที"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:visibility="visible" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

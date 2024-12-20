@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#6482AD</color>
+    <color name="skyblue">#7FA1C3</color>
+    <color name="egg">#E2DAD6</color>
+    <color name="whitePink">#F5EDED</color>
+    <color name="green_kemt">#4D869C</color>
+    <color name="green_oion">#7AB2B2</color>
+    <color name="egBlack">#242222</color>
+    <color name="bgBllue">#c4d3e6</color>
+    <color name="Bluekhem">#3C5272</color>
+    <color name="Bluebue">#3B7CDA</color>
+    <color name="transparent">#00ffffff</color>
+
+</resources>

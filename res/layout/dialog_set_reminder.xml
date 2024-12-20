@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:ignore="ScrollViewCount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="กรอกชื่อยา"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etMedicName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:inputType="text"
+            android:maxLength="100"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="15dp"
+            android:background="@drawable/diseatbg"
+            android:hint="กรอกชื่อยา" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เวลาการทานยา"
+            android:layout_marginTop="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/timePicker"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:hint="เวลา\nทานยา"
+                            android:layout_marginEnd="5dp"
+                            android:paddingHorizontal="16dp"
+                            android:paddingVertical="10dp"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:textSize="18sp"
+                            android:background="@drawable/background_button"/>
+
+                        <TextView
+                            android:id="@+id/datePicker"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:hint="วันที่\nทานยา"
+                            android:layout_marginStart="5dp"
+                            android:paddingHorizontal="16dp"
+                            android:paddingVertical="10dp"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:textSize="18sp"
+                            android:background="@drawable/background_button"/>
+                </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ประเภทของยา"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerMedicineType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/diseatbg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ปริมาณยา"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editTextQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ปริมาณยา"
+            android:maxLength="2"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/diseatbg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="หมายเหตุ"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/edNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="หมายเหตุเพิ่มเติม"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/diseatbg"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:paddingHorizontal="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/cancelButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/background_button"
+                            android:backgroundTint="#E91E63"
+                            android:textColor="@color/white"
+                            android:text="ยกเลิก"/>
+
+                        <Space
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"/>
+
+                        <Button
+                            android:id="@+id/submitButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_button"
+                            android:textColor="@color/white"
+                            android:layout_weight="1"
+                            android:text="ยืนยัน"/>
+                </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>

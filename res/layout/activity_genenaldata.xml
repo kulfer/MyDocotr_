@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ประวัติผู้ใช้งาน"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/subtitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ยิ่งให้ข้อมูลมากยิ่งได้คำปรึกษาตรงเท่านั้น"
+        android:textSize="14sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Height Input -->
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ส่วนสูง (เซนติเมตร)"
+        android:inputType="numberDecimal"
+        android:background="@drawable/diseatbg"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Weight Input -->
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/diseatbg"
+        android:hint="น้ำหนัก (กิโลกรัม)"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Existing Conditions Input -->
+    <EditText
+        android:id="@+id/conditionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="โรคประจำตัว (ถ้ามี)"
+        android:background="@drawable/diseatbg"
+        android:inputType="textMultiLine"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- No Condition CheckBox -->
+    <CheckBox
+        android:id="@+id/noConditionCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ไม่มี"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Allergy History Input -->
+    <EditText
+        android:id="@+id/allergyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ประวัติการแพ้ยา (ถ้ามี)"
+        android:background="@drawable/diseatbg"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- No Allergy CheckBox -->
+    <CheckBox
+        android:id="@+id/noAllergyCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ไม่มี"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ถัดไป"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/blue"/>
+
+</LinearLayout>

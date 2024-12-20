@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_background_light"
+    tools:context=".MainActivity">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="40sp"
+        android:textColor="@color/green_kemt"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="50dp" />
+
+    <!-- Illustration Image -->
+    <ImageView
+        android:id="@+id/illustration_image"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/grandwelcome1"
+        android:contentDescription="Hello to my App" />
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ยินดีต้อนรับสู่ My พบหมอ"
+        android:textSize="26sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp" />
+
+    <!-- Subtitle Text -->
+    <TextView
+        android:id="@+id/subtitle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="แอพพลิเคชันของเรา พร้อมให่บริการคุณทุกเมื่อ"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center" />
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="สร้างบัญชี"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue" />
+
+    <!-- Login Link -->
+    <TextView
+        android:id="@+id/login_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="หากคุณมีบัญชีแล้ว?  คลิกเข้าสู่ระบบ"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        />
+
+</LinearLayout>

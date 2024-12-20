@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".heartroctActivity">
+
+    <!-- Back Button -->
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50dp"
+        android:paddingStart="20dp"
+        android:touchscreenBlocksFocus="false"
+        tools:ignore="RtlSymmetry,UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/backimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="เกี่ยวกับหัวใจ"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/searchicon" /> -->
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+
+            <!-- ชื่อโรค -->
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:padding="8dp"
+                android:text="@string/loadhert"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <!-- โรคข้อเสื่อม -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/diseatbg"
+                android:padding="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center"
+                android:elevation="2dp">
+
+                <!-- อาการ -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/agran"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#F44336"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingBottom="8dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textAlignment="textStart"
+                    android:text="@string/loadhertroct"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/diseatbg"
+                android:padding="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+                android:elevation="2dp">
+
+                <!-- วิธีป้องกัน -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/safe"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingBottom="8dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="4dp"
+                    android:text="ใจสั่น รู้สึกหัวใจเต้นเร็วหรือช้าเกินไป หน้ามืด เป็นลม หายใจลำบาก"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:padding="8dp"
+                android:text="@string/hertlom"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <!-- โรคข้อเสื่อม -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/diseatbg"
+                android:padding="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center"
+                android:elevation="2dp">
+
+                <!-- อาการ -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/agran"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#F44336"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="@string/hertlomroct"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/diseatbg"
+                android:padding="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+                android:elevation="2dp">
+
+                <!-- วิธีป้องกัน -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/safe"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="@string/saveheartlom"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+            <!-- ชื่อโรค -->
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:padding="8dp"
+                android:text="@string/hertsieb"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <!-- โรคข้อเสื่อม -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/diseatbg"
+                android:padding="16dp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center"
+                android:elevation="2dp">
+
+                <!-- อาการ -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/agran"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#F44336"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingBottom="8dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:text="@string/hertsiebroct"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/diseatbg"
+                android:padding="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+                android:elevation="2dp">
+
+                <!-- วิธีป้องกัน -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/safe"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="หลีกเลี่ยงอาหารที่มีไขมันและเกลือสูง\n \nควบคุมน้ำหนักให้อยู่ในเกณฑ์มาตรฐาน ออกกำลังกายและลดการบริโภคแอลกอฮอล์"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+            <!-- ชื่อโรค -->
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:padding="8dp"
+                android:text="@string/heartrua"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <!-- โรคข้อเสื่อม -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/diseatbg"
+                android:padding="16dp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center"
+                android:elevation="2dp">
+
+                <!-- อาการ -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/agran"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#F44336"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingBottom="8dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:text="@string/heartruaroct"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/diseatbg"
+                android:padding="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+                android:elevation="2dp">
+
+                <!-- วิธีป้องกัน -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/safe"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="@string/saveheartrua"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+            <!-- ชื่อโรค -->
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:padding="8dp"
+                android:text="@string/heartdance"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <!-- โรคข้อเสื่อม -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/diseatbg"
+                android:padding="16dp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center"
+                android:elevation="2dp">
+
+                <!-- อาการ -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/agran"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#F44336"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingBottom="8dp"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:text="@string/heartdanceroct"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/diseatbg"
+                android:padding="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+                android:elevation="2dp">
+
+                <!-- วิธีป้องกัน -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/safe"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="@string/safeheartdance"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="120dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

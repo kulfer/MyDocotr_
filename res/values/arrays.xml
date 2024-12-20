@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="gender_array">gender</string-array>
+
+    <item name="ชาย" type="font" />
+    <item name="หญิง" type="font" />
+
+    <string-array name="medicine_types">
+        <item>เม็ด</item>
+        <item>น้ำ</item>
+        <item>แคปซูล</item>
+    </string-array>
+
+</resources>

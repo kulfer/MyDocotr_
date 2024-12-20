@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".helpsupportFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/white">
+
+        <!-- Back button and title -->
+        <LinearLayout
+            android:id="@+id/toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:text="ความช่วยเหลือ"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <!-- Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="หากคุณมีปัญหากับการใช้งานสามารถแจ้งปัญหาเข้ามาหาเรา \nเพื่อขอความช่วยเหลือได้"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/egBlack"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Title Input -->
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="หัวข้อปัญหาที่พบ"
+            android:padding="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/diseatbg"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Explain Problem Input -->
+        <EditText
+            android:id="@+id/etProblem"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="ระบุรายละเอียด"
+            android:padding="12dp"
+            android:gravity="top"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/diseatbg"
+            android:layout_marginBottom="16dp"
+            android:inputType="textMultiLine" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ส่งข้อความ"
+            android:textSize="20sp"
+            android:backgroundTint="@color/blue"
+            android:textColor="@android:color/white"
+            android:padding="6dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Contact Info -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="คุณสามารถติดต่อได้ที่อีเมล  -  ruphasff@gmail.com"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/egBlack"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</FrameLayout>

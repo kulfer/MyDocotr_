@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Doctor_useActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ข้อมูลผู้ใช้งานเบื้องต้น"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/subtitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="กรุณาใส่อายุจริง เพื่อให้แพทย์วินิจฉัยได้อย่างถูกต้อง"
+        android:textSize="14sp"
+        android:textColor="@color/blue"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Gender Selection -->
+    <TextView
+        android:id="@+id/generalTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ข้อมูลทั่วไป"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Name Input -->
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ชื่อ"
+        android:background="@drawable/diseatbg"
+        android:padding="12dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_gravity="center"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Name Input -->
+    <EditText
+        android:id="@+id/fullLastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="นามสกุล"
+        android:background="@drawable/diseatbg"
+        android:padding="12dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_gravity="center"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Date of Birth Input -->
+    <EditText
+        android:id="@+id/datetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="วันเกิด"
+        android:background="@drawable/diseatbg"
+        android:layout_gravity="center"
+        android:inputType="date"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Gender Selection -->
+    <TextView
+        android:id="@+id/genderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="เพศ"
+        android:textSize="16sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Gender Dropdown -->
+    <EditText
+        android:id="@+id/genderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="กรุณาเลือกเพศ"
+        android:background="@drawable/diseatbg"
+        android:padding="12dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Gender Selection -->
+    <TextView
+        android:id="@+id/speTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="แผนก"
+        android:textSize="16sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Gender Dropdown -->
+    <EditText
+        android:id="@+id/speText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="กรุณาเลือกแผนก"
+        android:background="@drawable/diseatbg"
+        android:padding="12dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/buttonnext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/blue"
+        android:text="ถัดไป" />
+
+</LinearLayout>

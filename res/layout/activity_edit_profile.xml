@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".EditProfileActivity">
+
+    <!-- Back Button -->
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="50dp"
+        android:layout_marginStart="20dp">
+
+        <ImageView
+            android:id="@+id/backimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textColor="@color/egBlack"
+            android:text="แก้ไขโปรไฟล์"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/searchicon" /> -->
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toplayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:paddingHorizontal="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <!-- Profile Image -->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile2"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/blue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="5dp"
+                android:layout_marginHorizontal="30dp"
+                android:background="@drawable/diseatbg"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:textColor="@color/egBlack"
+                    android:textStyle="bold"
+                    android:text="แก้ไขข้อมูลส่วนตัว"/>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:padding="20dp"
+                    android:background="@drawable/bgblueround">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edTxName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="ขื่อจริง"
+                            android:paddingStart="7dp"
+                            android:textSize="20sp"
+                            android:inputType="textPersonName"/>
+
+                        <EditText
+                            android:id="@+id/edTxlastname"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="7dp"
+                            android:layout_weight="1"
+                            android:textSize="20sp"
+                            android:hint="นามสกุล"
+                            android:inputType="textPersonName"/>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edTxGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:hint="เพศ"/>
+
+                    <EditText
+                        android:id="@+id/edTxAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:inputType="number"
+                        android:textSize="20sp"
+                        android:hint="อายุ"/>
+
+                    <EditText
+                        android:id="@+id/edTxAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textSize="20sp"
+                        android:hint="ที่อยู่"/>
+
+                    <EditText
+                        android:id="@+id/edTxTell"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:inputType="phone"
+                        android:textSize="20sp"
+                        android:maxLength="10"
+                        android:hint="เบอร์โทรศัพท์"/>
+
+                    <EditText
+                        android:id="@+id/edTxEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:inputType="textEmailAddress"
+                        android:textSize="20sp"
+                        android:hint="อีเมล"/>
+
+                    <EditText
+                        android:id="@+id/edTxDiseat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textSize="20sp"
+                        android:hint="กรอกข้อมููลอาการ"/>
+
+                    <EditText
+                        android:id="@+id/edTxDrug"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:textSize="20sp"
+                        android:hint="กรอกข้อมูลยาที่แพ้"/>
+
+                    <!-- Update Profile Button -->
+                    <Button
+                        android:id="@+id/update_profile_button"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/background_button"
+                        android:padding="5dp"
+                        android:text="บันทึกข้อมูลส่วนตัว"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"/>
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Myพบหมอ" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Primary สีหลักของแอป -->
+        <item name="colorPrimary">@color/blue</item>
+        <!-- สีของปุ่มที่มีความสำคัญ -->
+        <item name="colorPrimaryVariant">#3C5272</item>
+        <!-- สีตัวอักษรหรือไอคอน -->
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!-- Secondary สีรองของแอป -->
+        <item name="colorSecondary">@color/green_kemt</item>
+        <item name="colorSecondaryVariant">@color/green_oion</item>
+        <item name="colorOnSecondary">@color/egBlack</item>
+
+        <!-- สีพื้นหลัง -->
+        <item name="android:windowBackground">@color/bgBllue</item>
+    </style>
+
+    <style name="Theme.Myพบหมอ" parent="Base.Theme.Myพบหมอ" />
+</resources>

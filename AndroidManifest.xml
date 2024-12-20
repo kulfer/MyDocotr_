@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ManifestOrder" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.Myพบหมอ"
+        tools:targetApi="31">
+        <receiver
+            android:name=".Notification"
+            android:enabled="true"/>
+        <activity
+            android:name=".Doctor_useActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home_doctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor_signupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_drugActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TellsignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BrainroctActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GramActivity"
+            android:exported="false" />
+        <activity
+            android:name=".heartroctActivity"
+            android:exported="false" />
+        <activity
+            android:name=".allroctActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AlldrugActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo2" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/Bluekhem" />
+
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+
+        <receiver android:name=".MedicationReminderReceiver"
+            android:enabled="true"/>
+
+
+        <activity
+            android:name=".selectSignActivity"
+            android:exported="false" />
+        <activity
+            android:name=".docorpatientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".create_new_passwordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".verify_emailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".forgot_passwordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tuatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".drugActivity"
+            android:exported="false" />
+        <activity
+            android:name=".allbainadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".createbainadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".genenaldataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".datauseActivity"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+s
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBY6xg0Rlyx6isWaq4GDEbu-jX5_qHUKCM" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".settingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".notificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".energencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".doctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".diseaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mgbainadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".signupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

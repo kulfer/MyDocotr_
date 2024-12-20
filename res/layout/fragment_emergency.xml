@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".emergencyFragment">
+
+    <!-- Back Button -->
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:textColor="@color/black"
+            android:text="เรียกรถฉุกเฉิน"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <!-- <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/searchicon" /> -->
+    </LinearLayout>
+
+    <!-- ปุ่มเรียกรถพยาบาล -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/callAmbulanceButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        app:cardCornerRadius="180dp"
+        android:background="@drawable/diseatbg"
+        android:backgroundTint="#000000">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/callam"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            app:cardCornerRadius="180dp"
+            android:backgroundTint="#F44336">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="เรียก รถฉุกเฉิน"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- ปุ่มบันทึกข้อมูลส่วนตัว -->
+    <Button
+        android:id="@+id/mapinto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="ตรวจสอบเส้นทาง"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="60dp" />
+
+</LinearLayout>

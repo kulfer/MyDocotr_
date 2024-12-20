@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllNotificationsFragment">
+
+    <!-- ส่วนการแจ้งเตือน -->
+    <LinearLayout
+        android:id="@+id/notiitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="12dp">
+
+
+        <!-- Notification content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <!-- App name and time -->
+            <TextView
+                android:id="@+id/notification_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="การแจ้งเตือนใบนัด • 3h ago"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray" />
+
+            <!-- Notification message -->
+            <TextView
+                android:id="@+id/notification_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ใบนัดของคุณใกล้ถึงเวลา 1 รายการ"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Notification content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="12dp">
+
+            <!-- App name and time -->
+            <TextView
+                android:id="@+id/notification_titl2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="การแจ้งเตือนทานยา • 5h ago"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray" />
+
+            <!-- Notification message -->
+            <TextView
+                android:id="@+id/notification_message2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ใกล้ถึงเวลาการทานยาแล้ว"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

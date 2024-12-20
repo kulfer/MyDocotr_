@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/diseatbg"
+    android:padding="16dp"
+    android:paddingStart="20dp"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="15dp">
+
+            <TextView
+                android:id="@+id/medicationName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="#242222"
+                android:text="ยาพาราเซตามอล"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/medicationDetails"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:text="เพิ่มเติม"
+                android:textColor="@color/blue"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/medicationQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#242222"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/medicationType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เม็ด"
+            android:textColor="#242222"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/medicationTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เวลา: 08:00 น."
+            android:textColor="#242222"
+            android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/medicationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="วันที่: 21/11/2567"
+        android:textColor="#242222"
+        android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/medicationNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="หมายเหตุ: หลังอาหาร , ทุกวัน"
+            android:textColor="#242222"
+            android:textSize="16sp"/>
+
+</LinearLayout>
